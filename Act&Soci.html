@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vasuphon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Header with logo and menu -->
+    <header>
+        <img src="longMahidol_Logo.png" alt="Mahidol Uni" class="mahidol-photo" />
+
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="Act&Soci.html">Activities and Societies</a>
+            <!-- <a href="StudySubject.html">Study Subject</a> -->
+            <a href="GPA.html">GPA Grade Report</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="fb-post">
+            <div class="fb-post-header">
+                <img src="myimage.jpeg" alt="Facebook" class="fb-avatar" />
+                <div>
+                    <span class="fb-name">Vasuphon Boonchirt</span>
+                    <span class="fb-date">June 10, 2025</span>
+                </div>
+            </div>
+            <div class="fb-post-title">
+                <h3>Internship at The True Corporation as a Position Product Owner</h3><br>
+            </div>
+            <div class="fb-post-images-carousel">
+                <button class="carousel-btn left" onclick="moveCarousel(-1)">&#8592;</button>
+                <div class="carousel-images">
+                    <img src="Act&Soci image/true Intern 2025/IMG_8431.JPG" alt="Science Club Activity"
+                        class="fb-post-image carousel-img" style="display:block;">
+                    <img src="Act&Soci image/true Intern 2025/IMG_8432.JPG" alt="Science Club Activity 2"
+                        class="fb-post-image carousel-img" style="display:none;">
+                    <img src="Act&Soci image/true Intern 2025/IMG_8433.JPG" alt="Science Club Activity 3"
+                        class="fb-post-image carousel-img" style="display:none;">
+                </div>
+                <button class="carousel-btn right" onclick="moveCarousel(1)">&#8594;</button>
+            </div>
+            <div class="fb-post-caption">
+                ✨ Excited to share of my "First Post" that I’ve joined True Corporation as a Product Owner Internship!<br>
+                As part of the product owner team, I’ll be driving the development of the application working
+                closely on features that improve the user experience, align with business goals, and deliver real
+                impact.<br>
+                This is a great opportunity to deepen my understanding of product management, collaborate with
+                cross-functional teams, and learn how great digital products are built and scaled.<br>
+                Grateful to True Corporation for this chance and to everyone who has supported me so far.
+                Thank ,for contribute, and make the most of this journey! 🚀🔬
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Mail: act22805@gmail.com , Kaogang999@gmail.com , act22805@hotmail.com</p>
+        <p>Bangkok, Thailand</p>
+        <p>Contact Number: +66-827772467</p>
+
+        <div class="socials">
+            <a href="mailto:act22805@gmail.com" target="_blank"><img src="icon/gmail.png" alt="Email" /></a>
+            <a href="https://www.linkedin.com/in/vasuphon-boonchirt-27sep2003/" target="_blank"><img
+                    src="icon/linkedin.png" alt="LinkedIn" /></a>
+            <a href="https://github.com/kkaovsp" target="_blank"><img src="icon/github.png" alt="GitHub" /></a>
+            <a href="https://www.instagram.com/kkaovsp/" target="_blank"><img src="icon/instagram.png"
+                    alt="Instagram" /></a>
+            <a href="https://www.facebook.com/vasuphon.boonchirt" target="_blank"><img src="icon/facebook.png"
+                    alt="Facebook" /></a>
+            <a href="https://www.tiktok.com/@kkaovsp" target="_blank"><img src="icon/tiktok.png" alt="Tiktok" /></a>
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+<script>
+    // filepath: /Users/kao_macbookm2/Documents/CV Resume/vasuphonCV/Act&Soci.html
+    let current = 0;
+    const imgs = document.querySelectorAll('.carousel-img');
+    function moveCarousel(dir) {
+        imgs[current].style.display = "none";
+        current = (current + dir + imgs.length) % imgs.length;
+        imgs[current].style.display = "block";
+    }
+</script>
+
+
+</html>
