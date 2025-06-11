@@ -1,3 +1,4 @@
+/* --------- Start of Header -------- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -47,6 +48,9 @@ header nav a:focus {
     text-decoration: underline;
 }
 
+
+
+/* --------- End of Header -------- */
 
 section.bio {
     display: flex;
@@ -138,6 +142,89 @@ section.bio {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
     /* เงาเบาๆ */
 }
+
+/* ...existing code... */
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 0 18px 0;
+    }
+
+    .mahidol-photo {
+        margin-bottom: 8px;
+        margin-top: 0;
+        width: 160px;
+        height: auto;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav a {
+        width: 90vw;
+        text-align: center;
+        padding: 1px 0;
+        font-size: 1.1em;
+        border-radius: 12px;
+    }
+
+    section.bio {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 12px;
+    }
+
+    .profile-photo {
+        display: block;
+        margin: 0 auto 12px auto;
+        width: auto;
+        max-width: 150px;
+        padding: 10px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        max-width: 600px;
+        width: 98vw;
+        padding: 0 8px;
+        box-sizing: border-box;
+    }
+
+    .info h1,
+    .info h4,
+    .info p {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1.2;
+        padding: auto;
+    }
+    .socials p, .socials img {
+        margin: 0;
+        padding: 5px 0 10px  1px;
+    }
+
+    /* ส่วนอื่นๆ ใช้เหมือน desktop */
+}
+
+/* ...phone screen sixe code... */
 
 /* ---------------- In The file GPA.html ---------------- */
 .gpa-title {
